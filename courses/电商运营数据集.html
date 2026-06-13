@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电商运营数据集 | 课程实操</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href=" " class="back-btn">← 返回首页</a >
+
+        <div class="course-page">
+            <div class="header" style="margin-bottom:20px; padding:20px;">
+                <h1 style="font-size:1.8rem;">蔡欣淇</h1>
+                <p>广东科学技术职业学院 · 商务数据分析与应用专业</p >
+            </div>
+
+            <h2 class="course-title">电商运营数据集</h2>
+            <p style="color:#a0aec0; margin-bottom:20px;">
+                课程简介：围绕电商平台流量、访客、订单、销量、客单价等核心运营指标，学习电商数据清洗、指标计算、用户行为与商品销售分析。
+            </p >
+
+            <div class="question-list">
+                <div class="question-item">
+                    <h4>题目1：电商数据读取</h4>
+                    <p>导入电商订单数据集，查看商品、销量、金额等字段。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目2：整体销量统计</h4>
+                    <p>统计全店商品总销量与总销售额。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目3：热销商品筛选</h4>
+                    <p>根据销量排序，提取平台热销商品数据。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目4：访客数据统计</h4>
+                    <p>统计每日访客数量，分析流量变化。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目5：无效订单清理</h4>
+                    <p>过滤取消、退款等无效订单数据。</p >
+                </div>
+
+                <div class="question-item">
+                    <h4>题目6【代码运行题】：计算客单价</h4>
+                    <p>根据订单数与销售总额，计算整体客单价。</p >
+                    <div class="code-editor-container">
+                        <div class="code-editor-header">Python 代码编辑器</div>
+                        <textarea id="codeInput" spellcheck="true">
+# 模拟电商数据
+order_count = 126      # 订单总数
+sale_total = 38600     # 销售总额
+
+avg_price = sale_total / order_count
+print(f"订单总数：{order_count} 单")
+print(f"销售总额：{sale_total} 元")
+print(f"平均客单价：{avg_price:.2f} 元")
+                        </textarea>
+                        <button class="run-btn" onclick="runPythonCode()">运行代码</button>
+                        <div class="output-area" id="outputArea">代码运行结果将显示在这里……</div>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h4>题目7：品类销量分析</h4>
+                    <p>按商品品类分组，统计各品类销量与占比。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目8：时段销量分析</h4>
+                    <p>分析不同时间段的下单量，定位高峰时段。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目9：复购用户筛选</h4>
+                    <p>识别多次下单的复购用户群体。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目10：运营数据报表导出</h4>
+                    <p>将电商分析结果整理为运营报表并保存。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

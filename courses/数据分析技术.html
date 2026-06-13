@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据分析技术 | 课程实操</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href=" " class="back-btn">← 返回首页</a >
+
+        <div class="course-page">
+            <div class="header" style="margin-bottom:20px; padding:20px;">
+                <h1 style="font-size:1.8rem;">蔡欣淇</h1>
+                <p>广东科学技术职业学院 · 商务数据分析与应用专业</p >
+            </div>
+
+            <h2 class="course-title">数据分析技术</h2>
+            <p style="color:#a0aec0; margin-bottom:20px;">
+                课程简介：讲解数据清洗、数据预处理、描述性统计、数据筛选、分组聚合与可视化等专业技能，使用Pandas、Matplotlib完成全流程数据分析实操。
+            </p >
+
+            <div class="question-list">
+                <div class="question-item">
+                    <h4>题目1：数据集读取</h4>
+                    <p>使用Pandas读取本地CSV格式数据集，查看前5行数据。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目2：数据基本探查</h4>
+                    <p>使用info()、describe()查看数据集结构、类型与统计指标。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目3：缺失值处理</h4>
+                    <p>检测数据集中缺失值，并使用均值完成填充操作。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目4：重复数据清理</h4>
+                    <p>查找并删除数据集中全部重复行数据。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目5：条件筛选数据</h4>
+                    <p>根据数值条件，筛选出符合要求的目标数据行。</p >
+                </div>
+
+                <div class="question-item">
+                    <h4>题目6【代码运行题】：计算均值、最大值、最小值</h4>
+                    <p>对一组测试数据完成基础描述性统计计算。</p >
+                    <div class="code-editor-container">
+                        <div class="code-editor-header">Python 代码编辑器</div>
+                        <textarea id="codeInput" spellcheck="true">
+# 模拟一组业务数据
+data = [22, 45, 18, 67, 33, 51, 29, 72]
+avg = sum(data) / len(data)
+max_val = max(data)
+min_val = min(data)
+
+print("数据列表：", data)
+print(f"平均值：{avg:.2f}")
+print(f"最大值：{max_val}")
+print(f"最小值：{min_val}")
+                        </textarea>
+                        <button class="run-btn" onclick="runPythonCode()">运行代码</button>
+                        <div class="output-area" id="outputArea">代码运行结果将显示在这里……</div>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h4>题目7：数据排序</h4>
+                    <p>按照指定字段对数据集进行升序、降序排序。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目8：分组聚合统计</h4>
+                    <p>使用groupby按照类别分组，并完成求和统计。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目9：基础数据可视化</h4>
+                    <p>使用绘图库绘制简单折线图展示数据趋势。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目10：数据导出保存</h4>
+                    <p>将清洗完成的数据集重新导出为CSV文件。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

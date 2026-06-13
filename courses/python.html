@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python基础 | 课程实操</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href=" " class="back-btn">← 返回首页</a >
+
+        <div class="course-page">
+            <div class="header" style="margin-bottom:20px; padding:20px;">
+                <h1 style="font-size:1.8rem;">蔡欣淇</h1>
+                <p>广东科学技术职业学院 · 商务数据分析与应用专业</p >
+            </div>
+
+            <h2 class="course-title">Python 基础</h2>
+            <p style="color:#a0aec0; margin-bottom:20px;">
+                课程简介：本课程讲解Python基础语法、变量、流程控制、函数、容器等核心知识点，是数据分析必备入门语言，侧重编程思维与基础实操训练。
+            </p >
+
+            <!-- 第6题：在线代码运行题 -->
+            <div class="question-list">
+                <div class="question-item">
+                    <h4>题目1：基础输出</h4>
+                    <p>使用print函数在控制台输出“数据分析学习进行中”。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目2：变量与数据类型</h4>
+                    <p>定义字符串、整型、浮点型变量，并分别打印变量及对应数据类型。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目3：分支结构if判断</h4>
+                    <p>接收一个数字，判断该数字是正数、负数还是零。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目4：for循环遍历列表</h4>
+                    <p>创建课程名称列表，使用循环逐行输出所有课程名。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目5：while循环累加计算</h4>
+                    <p>利用while循环计算 1 到 50 所有整数的和。</p >
+                </div>
+
+                <div class="question-item">
+                    <h4>题目6【代码运行题】：自定义函数实现两数运算</h4>
+                    <p>编写函数，接收两个参数，实现求和运算并调用函数输出结果。</p >
+                    <div class="code-editor-container">
+                        <div class="code-editor-header">Python 代码编辑器</div>
+                        <textarea id="codeInput" spellcheck="true">
+# 定义求和函数
+def sum_two_num(a, b):
+    return a + b
+
+# 调用函数
+num1 = 88
+num2 = 66
+result = sum_two_num(num1, num2)
+print(f"{num1} + {num2} = {result}")
+                        </textarea>
+                        <button class="run-btn" onclick="runPythonCode()">运行代码</button>
+                        <div class="output-area" id="outputArea">代码运行结果将显示在这里……</div>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h4>题目7：列表增删改查</h4>
+                    <p>对列表执行追加、删除、修改元素操作，打印最终列表。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目8：字典数据操作</h4>
+                    <p>创建个人信息字典，完成取值、修改、新增键值对操作。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目9：字符串处理</h4>
+                    <p>对字符串进行切片、去除空格、大小写转换操作。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目10：异常捕获</h4>
+                    <p>使用 try-except 捕获除数为0的运行异常。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

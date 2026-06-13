@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招聘网站数据集 | 课程实操</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href=" " class="back-btn">← 返回首页</a >
+
+        <div class="course-page">
+            <div class="header" style="margin-bottom:20px; padding:20px;">
+                <h1 style="font-size:1.8rem;">蔡欣淇</h1>
+                <p>广东科学技术职业学院 · 商务数据分析与应用专业</p >
+            </div>
+
+            <h2 class="course-title">招聘网站数据集</h2>
+            <p style="color:#a0aec0; margin-bottom:20px;">
+                课程简介：基于招聘岗位数据集，分析岗位数量、薪资水平、行业分布、技能要求等内容，学习人力资源与就业方向的数据统计与分析方法。
+            </p >
+
+            <div class="question-list">
+                <div class="question-item">
+                    <h4>题目1：招聘数据读取</h4>
+                    <p>导入招聘数据集，查看岗位、薪资、城市、行业等字段。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目2：岗位总量统计</h4>
+                    <p>统计平台全部有效招聘岗位数量。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目3：高薪岗位筛选</h4>
+                    <p>根据薪资阈值，筛选高薪招聘岗位。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目4：城市岗位分布</h4>
+                    <p>按城市分组，统计各城市岗位数量。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目5：行业岗位统计</h4>
+                    <p>按行业分类，统计不同行业招聘需求。</p >
+                </div>
+
+                <div class="question-item">
+                    <h4>题目6【代码运行题】：计算岗位平均薪资</h4>
+                    <p>根据多组岗位薪资数据，计算平均薪资水平。</p >
+                    <div class="code-editor-container">
+                        <div class="code-editor-header">Python 代码编辑器</div>
+                        <textarea id="codeInput" spellcheck="true">
+# 模拟岗位月薪数据（单位：元）
+salary_list = [6000, 8500, 5500, 9200, 7300, 6800]
+avg_sal = sum(salary_list) / len(salary_list)
+
+print("各岗位月薪：", salary_list)
+print(f"岗位平均月薪：{avg_sal:.0f} 元")
+                        </textarea>
+                        <button class="run-btn" onclick="runPythonCode()">运行代码</button>
+                        <div class="output-area" id="outputArea">代码运行结果将显示在这里……</div>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h4>题目7：学历要求分析</h4>
+                    <p>按学历要求分组，统计不同学历岗位占比。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目8：经验要求统计</h4>
+                    <p>分析不同工作经验要求的岗位数量分布。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目9：热门技能提取</h4>
+                    <p>统计岗位高频技能要求，分析市场需求。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目10：招聘数据分析报告导出</h4>
+                    <p>整理就业数据分析结果，生成完整分析报表。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

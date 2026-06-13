@@ -1,0 +1,190 @@
+/* 全局重置 + 深色高级风格 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft Yahei", "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #1a1d23;
+    color: #e2e8f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部个人信息（和截图一致的渐变深色栏） */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #fff;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #61dafb; /* 截图里的亮蓝色名字 */
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* 课程卡片网格（深色适配） */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.course-card {
+    background: #2d3748;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #4a5568;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+    border-color: #61dafb;
+}
+
+.course-card h3 {
+    color: #61dafb;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.course-card p {
+    color: #a0aec0;
+    font-size: 0.95rem;
+}
+
+/* 课程页面通用样式（和截图一致） */
+.course-page {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    color: #61dafb;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+}
+
+.back-btn:hover {
+    color: #fff;
+    background-color: rgba(97, 218, 251, 0.2);
+}
+
+.course-title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #4a5568;
+}
+
+/* 实操题目样式 */
+.question-list {
+    margin-top: 20px;
+}
+
+.question-item {
+    background: #2d3748;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #4a5568;
+}
+
+.question-item h4 {
+    color: #61dafb;
+    margin-bottom: 10px;
+}
+
+/* 在线代码编辑器容器（和截图一致） */
+.code-editor-container {
+    background: #1a1d23;
+    border-radius: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.code-editor-header {
+    padding: 10px 15px;
+    background: #2d3748;
+    border-bottom: 1px solid #4a5568;
+    color: #a0aec0;
+    font-size: 0.9rem;
+}
+
+#codeInput {
+    width: 100%;
+    min-height: 250px;
+    background: #1a1d23;
+    color: #e2e8f0;
+    border: none;
+    padding: 15px;
+    font-family: "Consolas", "Monaco", monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: vertical;
+    outline: none;
+}
+
+.run-btn {
+    padding: 10px 24px;
+    background-color: #61dafb;
+    color: #1a1d23;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.run-btn:hover {
+    background-color: #4cc9f0;
+}
+
+.output-area {
+    background: #1a1d23;
+    padding: 15px;
+    border-top: 1px solid #4a5568;
+    color: #86efac;
+    font-family: "Consolas", monospace;
+    min-height: 60px;
+}
+
+/* 响应式适配手机 */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    .course-page {
+        padding: 20px;
+    }
+}

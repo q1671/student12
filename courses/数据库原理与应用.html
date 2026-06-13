@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据库原理与应用 | 课程实操</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href=" " class="back-btn">← 返回首页</a >
+
+        <div class="course-page">
+            <div class="header" style="margin-bottom:20px; padding:20px;">
+                <h1 style="font-size:1.8rem;">蔡欣淇</h1>
+                <p>广东科学技术职业学院 · 商务数据分析与应用专业</p >
+            </div>
+
+            <h2 class="course-title">数据库原理与应用</h2>
+            <p style="color:#a0aec0; margin-bottom:20px;">
+                课程简介：学习关系型数据库基础、数据表设计、SQL增删改查、多表查询、索引等内容，掌握数据库操作与Python连接数据库的实操能力。
+            </p >
+
+            <div class="question-list">
+                <div class="question-item">
+                    <h4>题目1：创建数据表</h4>
+                    <p>使用SQL语句创建学生信息数据表，设置字段与数据类型。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目2：插入单条数据</h4>
+                    <p>使用INSERT语句向数据表中添加一条新记录。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目3：全表数据查询</h4>
+                    <p>使用SELECT语句查询表中所有字段与数据。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目4：条件查询</h4>
+                    <p>设置WHERE条件，筛选符合要求的数据行。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目5：数据更新操作</h4>
+                    <p>使用UPDATE语句修改表中已存在的数据。</p >
+                </div>
+
+                <div class="question-item">
+                    <h4>题目6【代码运行题】：模拟数据查询逻辑</h4>
+                    <p>用Python模拟数据库查询，根据条件筛选人员信息。</p >
+                    <div class="code-editor-container">
+                        <div class="code-editor-header">Python 代码编辑器</div>
+                        <textarea id="codeInput" spellcheck="true">
+# 模拟数据库表数据
+student = [
+    {"name":"张三","age":19,"major":"大数据"},
+    {"name":"李四","age":20,"major":"电商"},
+    {"name":"王五","age":19,"major":"大数据"}
+]
+
+# 条件查询：筛选专业为大数据的学生
+print("专业为大数据的学生：")
+for s in student:
+    if s["major"] == "大数据":
+        print(f"姓名：{s['name']}，年龄：{s['age']}")
+                        </textarea>
+                        <button class="run-btn" onclick="runPythonCode()">运行代码</button>
+                        <div class="output-area" id="outputArea">代码运行结果将显示在这里……</div>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h4>题目7：删除数据记录</h4>
+                    <p>使用DELETE语句删除表中指定条件的数据。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目8：分组聚合查询</h4>
+                    <p>结合GROUP BY与聚合函数完成分组统计。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目9：多表关联查询</h4>
+                    <p>使用JOIN语句实现两张数据表联合查询。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目10：创建索引</h4>
+                    <p>为常用查询字段建立索引，优化查询效率。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

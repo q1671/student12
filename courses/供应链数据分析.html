@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>供应链数据分析 | 课程实操</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href=" " class="back-btn">← 返回首页</a >
+
+        <div class="course-page">
+            <div class="header" style="margin-bottom:20px; padding:20px;">
+                <h1 style="font-size:1.8rem;">蔡欣淇</h1>
+                <p>广东科学技术职业学院 · 商务数据分析与应用专业</p >
+            </div>
+
+            <h2 class="course-title">供应链数据分析</h2>
+            <p style="color:#a0aec0; margin-bottom:20px;">
+                课程简介：聚焦供应链场景数据，学习订单、库存、供应商、交付时效等指标分析，掌握供应链数据建模、异常识别与业务分析思路。
+            </p >
+
+            <div class="question-list">
+                <div class="question-item">
+                    <h4>题目1：供应链订单数据读取</h4>
+                    <p>导入订单数据集，查看整体数据规模与字段信息。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目2：库存总量统计</h4>
+                    <p>统计所有商品的总库存数量与平均库存。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目3：超时订单筛选</h4>
+                    <p>根据交付天数，筛选出超时未完成的订单。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目4：供应商供货统计</h4>
+                    <p>按供应商分组，统计每家供应商总供货量。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目5：低库存商品标记</h4>
+                    <p>对库存数量低于阈值的商品进行标记区分。</p >
+                </div>
+
+                <div class="question-item">
+                    <h4>题目6【代码运行题】：计算平均交付周期</h4>
+                    <p>根据订单交付天数，计算整体平均交付时长。</p >
+                    <div class="code-editor-container">
+                        <div class="code-editor-header">Python 代码编辑器</div>
+                        <textarea id="codeInput" spellcheck="true">
+# 模拟订单交付天数数据
+delivery_days = [3, 5, 2, 7, 4, 6, 3, 8, 4]
+total = sum(delivery_days)
+avg_days = total / len(delivery_days)
+
+print("各订单交付天数：", delivery_days)
+print(f"平均交付周期：{avg_days:.1f} 天")
+                        </textarea>
+                        <button class="run-btn" onclick="runPythonCode()">运行代码</button>
+                        <div class="output-area" id="outputArea">代码运行结果将显示在这里……</div>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h4>题目7：区域供货量排行</h4>
+                    <p>按地区统计供货量，并从高到低排序。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目8：月度订单汇总</h4>
+                    <p>按照月份维度，汇总每月订单总数。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目9：供应链异常数据识别</h4>
+                    <p>识别极值数据、异常订单并单独提取。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目10：供应链分析报表导出</h4>
+                    <p>将分析结果整理并导出为业务报表。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

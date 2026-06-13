@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>供应链物流数据集 | 课程实操</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href=" " class="back-btn">← 返回首页</a >
+
+        <div class="course-page">
+            <div class="header" style="margin-bottom:20px; padding:20px;">
+                <h1 style="font-size:1.8rem;">蔡欣淇</h1>
+                <p>广东科学技术职业学院 · 商务数据分析与应用专业</p >
+            </div>
+
+            <h2 class="course-title">供应链物流数据集</h2>
+            <p style="color:#a0aec0; margin-bottom:20px;">
+                课程简介：针对仓储、运输、配送、物流时效、运费等物流数据开展分析，掌握物流效率评估、路线分析、仓储周转等物流场景数据分析技能。
+            </p >
+
+            <div class="question-list">
+                <div class="question-item">
+                    <h4>题目1：物流数据导入</h4>
+                    <p>读取物流配送数据集，查看运单、地址、时效等字段。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目2：每日运单统计</h4>
+                    <p>统计每日发货运单总量，分析发货规模。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目3：超时配送筛选</h4>
+                    <p>筛选超出标准时效的异常配送订单。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目4：仓储库存周转统计</h4>
+                    <p>计算商品库存周转情况，评估仓储效率。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目5：区域物流分布</h4>
+                    <p>按收货地区分组，统计各区域货量占比。</p >
+                </div>
+
+                <div class="question-item">
+                    <h4>题目6【代码运行题】：计算平均配送时长</h4>
+                    <p>根据多单物流时长，计算整体平均配送时间。</p >
+                    <div class="code-editor-container">
+                        <div class="code-editor-header">Python 代码编辑器</div>
+                        <textarea id="codeInput" spellcheck="true">
+# 模拟每单配送时长（小时）
+delivery_hour = [12, 18, 24, 15, 20, 16, 22]
+avg_h = sum(delivery_hour) / len(delivery_hour)
+
+print("各单配送时长：", delivery_hour)
+print(f"平均配送时长：{avg_h:.1f} 小时")
+                        </textarea>
+                        <button class="run-btn" onclick="runPythonCode()">运行代码</button>
+                        <div class="output-area" id="outputArea">代码运行结果将显示在这里……</div>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <h4>题目7：运费成本统计</h4>
+                    <p>汇总总运费，并计算单均运费成本。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目8：物流公司对比</h4>
+                    <p>按物流服务商分组，对比各家配送效率。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目9：物流异常标记</h4>
+                    <p>对丢失、滞留、破损等异常物流单进行标记。</p >
+                </div>
+                <div class="question-item">
+                    <h4>题目10：物流分析报表生成</h4>
+                    <p>整合物流指标，输出物流运营分析报表。</p >
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
